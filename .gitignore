@@ -31,5 +31,5 @@
 *.out
 *.app
 
-/godot
-/godot-cpp
+#/godot
+#/godot-cpp
