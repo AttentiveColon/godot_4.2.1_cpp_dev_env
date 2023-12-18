@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceFolder}/godot"
+    },
+    "tasks": [
+        {
+            "label": "build",
+            "group": "build",
+            "type": "shell",
+            "command": "scons",
+            "args": [
+              // enable for debugging with breakpoints
+              "-j",
+              "4",
+              "platform=windows",
+              "custom_modules=../modules",
+              "dev_build=yes",
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "clean",
+            "group": "none",
+            "type": "shell",
+            "command": "scons",
+            "args": [
+              // enable for debugging with breakpoints
+              "--clean",
+              "-j",
+              "4",
+              "platform=windows",
+              "custom_modules=../modules",
+              "dev_build=yes",
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
