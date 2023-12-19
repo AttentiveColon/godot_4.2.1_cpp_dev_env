@@ -15,8 +15,9 @@
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-msvc-x64",
+            "compileCommands": "godot/compile_commands.json",
             "compilerArgs": [
-
+                
             ]
         }
     ],
